@@ -5,7 +5,7 @@ import CustomModal from "../../Modal";
 import VideoPlayer from "../../utilities/ReactPlayer";
 
 
-function NewRelease(){
+function Action(){
     const [newReleaseDatas, setNewReleaseDatas] = useState({});
     const [sliderIndex, setSliderIndex] = useState(0);
     const [genrns, setGenres] = useState([]);
@@ -15,7 +15,7 @@ function NewRelease(){
 
     useEffect(() => {
         const fetchData = async () => {
-        const url1 = "https://api.themoviedb.org/3/discover/movie?api_key=ef391cfeb6f174409ba6f7cc816802b9&with_genres=28";
+        const url1 ="https://api.themoviedb.org/3/discover/movie?api_key=ef391cfeb6f174409ba6f7cc816802b9&with_genres=10749";
         const response = await axios.get(url1);
         const data = await response.data;
         setNewReleaseDatas(data);
@@ -81,7 +81,7 @@ function NewRelease(){
     
     return (
         <div className="flex flex-col justify-center pt-6 gap-2 newRelease-container">
-            <h1 className="newRelease-heading pl-12">Top Action Movies</h1>
+            <h1 className="newRelease-heading pl-12">Romantic Movies</h1>
             <div className="newRelease-carousal">
                 <button className="release-handle left-handle pb-3" onClick={handlePrevSlide}></button>
                 <div className="slider" style={{ transform: `translateX(calc(-${sliderIndex * 100}%))`, transition: "transform 0.5s ease-in-out", }}>
@@ -169,4 +169,4 @@ function NewRelease(){
     );
 }
 
-export default NewRelease;
+export default Action;

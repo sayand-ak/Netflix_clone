@@ -1,0 +1,15 @@
+.Modalbtn{
+    border: 1px white solid;
+    border-radius: 40px;
+    padding: 6px;
+}
+
+.volIcon{
+    border: 1px grey solid;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.volIcon:hover{
+    border-color: white;
+}

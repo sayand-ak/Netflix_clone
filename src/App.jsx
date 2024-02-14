@@ -1,11 +1,15 @@
 import './App.css'
 import Header from './components/Header/Header';
-function App() {
+import Body from './components/Body/Body';
+import Footer from './components/Footer/footer';
 
+function App() {
   return (
-    <>
-      <Header/>
-    </>
+      <>
+        <Header />
+        <Body />
+        <Footer/>
+      </>
   )
 }
 

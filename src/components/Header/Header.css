@@ -1,3 +1,10 @@
+.main-header{
+    width: 100vw;
+    transition: background-color 0.3s ease;
+}
+.main-header.scrolled {
+    background-color: black; 
+  }
 /* profile dropdown viewing */
 .profile-dropdown{
     position: relative;
@@ -70,5 +77,6 @@
 }
   
 .body-main-section {
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
 }

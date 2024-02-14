@@ -23,7 +23,7 @@ function Banner(){
             bodyRef.current.style.backgroundSize = 'cover';   
         }
     },[bannerData]);
-
+    
     const title = bannerData?.results?.[0]?.title;
     const desciption = bannerData?.results?.[0]?.overview;
 

@@ -1,0 +1,8 @@
+body{
+    z-index: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
